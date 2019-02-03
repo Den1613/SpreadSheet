@@ -51,7 +51,7 @@ int main()
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < columns; j++)
 			// Проверка StringCell
-			if (spreadsheet[i][j][0] == '‘') { 
+			if (spreadsheet[i][j][0] == '.') {  // Вместо префикса ‘ использовал префикс .
 				spreadsheet[i][j].erase(0, 1);
 			}
 			// Проверка ReferenceCell
